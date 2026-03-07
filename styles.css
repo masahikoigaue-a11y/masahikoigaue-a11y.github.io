@@ -341,6 +341,64 @@ main {
   background: #fff8e8;
   font-weight: 500;
 }
+
+.reference-training {
+  border-left: 8px solid #3d6e9f;
+  background: linear-gradient(145deg, #fcfefc 0%, #f2f7fb 100%);
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.ref-visual img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #d7dfe5;
+  box-shadow: 0 10px 24px rgba(30, 35, 24, 0.12);
+}
+
+.ref-label {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e8eff8;
+  color: #2f5f92;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.ref-body h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+}
+
+.ref-body p {
+  margin: 0 0 12px;
+}
+
+.ref-body ul {
+  margin: 0 0 16px;
+  padding-left: 18px;
+}
+
+.hero-title-image {
+  margin: 16px 0 18px;
+}
+
+.hero-title-image img {
+  width: 100%;
+  max-width: 980px;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid #d9dde0;
+  box-shadow: 0 12px 26px rgba(20, 30, 40, 0.14);
+}
 @media (max-width: 980px) {
   .chapter-map-grid,
   .toc-grid {
@@ -348,6 +406,7 @@ main {
   }
 
   .book-grid,
+  .ref-grid,
   .company-grid {
     grid-template-columns: 1fr;
   }
@@ -361,4 +420,8 @@ main {
     min-width: 95px;
   }
 }
+
+
+
+
 
