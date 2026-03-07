@@ -3,44 +3,252 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My GitHub Pages Site</title>
-    <meta name="description" content="GitHub Pagesで公開したシンプルなホームページ" />
+    <title>集中力を高め、仕事と勉強の効率を最大5倍に上げる体調管理のテクニック</title>
+    <meta
+      name="description"
+      content="アスリート並みに体調を管理するビジネスパーソンの新常識"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
-      <p class="eyebrow">GitHub Pages</p>
-      <h1>はじめてのホームページ</h1>
+      <nav class="top-nav">
+        <a href="#structure">章構成</a>
+        <a href="#chapter1">第1章 睡眠編</a>
+        <a href="#chapter2">第2章 食事編</a>
+        <a href="#chapter3">第3章 運動編</a>
+        <a href="#apply">お問い合わせ</a>
+      </nav>
+      <p class="eyebrow">研修テーマ | 集中するために体調を整える</p>
+      <h1>集中力を高める体調設計研修</h1>
       <p class="lead">
-        このページはGitHub Pagesで公開するための最小サンプルです。<br />
-        テキストと色を変えるだけで、すぐ自分のHPとして使えます。
+        アスリート並みに体調を管理するビジネスパーソンの新常識<br />
+        
       </p>
-      <a class="button" href="https://github.com" target="_blank" rel="noreferrer">GitHubを開く</a>
+      <div class="hero-actions">
+        <a class="button primary" href="#structure">章構成を見る</a>
+        <a class="button ghost" href="#apply">導入を相談する</a>
+      </div>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>自己紹介</h2>
-        <p>ここにあなたのプロフィールを書いてください。</p>
+
+
+    <main>
+      <section class="section intro">
+        <h2>この研修で扱うこと</h2>
+        <p>
+          「眠い」「だるい」「頭が回らない」といった日常の不調を、集中力低下の構造として捉え直します。
+          アスリートの体調管理メソッドをビジネス向けに翻訳し、現場で回せる運用に落とし込みます。
+        </p>
+        <figure class="hero-illustration">
+          <img src="training-illustration.svg" alt="睡眠・食事・運動を整えて集中力を高める研修のイメージ" />
+        </figure>
       </section>
 
-      <section>
-        <h2>作ったもの</h2>
+      <section class="section outcomes" id="outcomes">
+        <h2>到達目標</h2>
+        <div class="outcome-list">
+          <p>1. 自分の集中を崩す生活パターンを特定できる</p>
+          <p>2. 3章（睡眠・食事・運動）を週単位で設計できる</p>
+          <p>3. 研修翌日から実行できる行動計画を持ち帰る</p>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section structure" id="structure">
+        <h2>研修の章構成（3章）</h2>
+        <div class="chapter-map-grid">
+          <article class="chapter-map sleep">
+            <p class="chapter-no">第1章</p>
+            <h3>睡眠編</h3>
+            <p>睡眠時間と睡眠の質を設計し、翌日の集中力を安定させる。</p>
+          </article>
+          <article class="chapter-map meal">
+            <p class="chapter-no">第2章</p>
+            <h3>食事編</h3>
+            <p>血糖値の乱高下を抑え、食後の眠気と集中切れを防ぐ。</p>
+          </article>
+          <article class="chapter-map move">
+            <p class="chapter-no">第3章</p>
+            <h3>運動編</h3>
+            <p>軽運動を使って脳の覚醒レベルを整え、集中持続を支える。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section chapter-section sleep" id="chapter1">
+        <h2>第1章 睡眠編</h2>
+        <p class="chapter-goal">目的: 睡眠を「回復」ではなく「成果を生む投資」に変える</p>
         <ul>
-          <li>プロジェクトA</li>
-          <li>プロジェクトB</li>
-          <li>ブログ記事</li>
+          <li>睡眠不足が生産性に与える影響を定量・定性で理解する</li>
+          <li>最適睡眠時間を計測し、起床時刻固定で生活リズムを安定させる</li>
+          <li>就寝1-2時間前の減速レーン（光・カフェイン・入浴・ルーティン）を設計する</li>
+          <li>短時間で入眠しやすくなる実践法を身につける</li>
         </ul>
       </section>
 
-      <section>
-        <h2>連絡先</h2>
-        <p>メール: your-name@example.com</p>
+      <section class="section chapter-section meal" id="chapter2">
+        <h2>第2章 食事編</h2>
+        <p class="chapter-goal">目的: 血糖値を安定させ、食後の眠気・だるさを減らす</p>
+        <ul>
+          <li>血糖値スパイクと乱高下のメカニズムを理解する</li>
+          <li>たんぱく質・脂質・食物繊維を組み合わせた食事設計を行う</li>
+          <li>ベジファーストと低GI選択で集中前の食事を最適化する</li>
+          <li>間食・分割食・食後10-15分の活動で集中力低下を予防する</li>
+        </ul>
+      </section>
+
+      <section class="section chapter-section move" id="chapter3">
+        <h2>第3章 運動編</h2>
+        <p class="chapter-goal">目的: 運動を「体力づくり」ではなく「集中準備」に変える</p>
+        <ul>
+          <li>集中前に有効な短時間アクティブ法を実践する</li>
+          <li>疲労を残さない運動量の調整ルールを作る</li>
+          <li>午前・午後・夕方の覚醒レベルに応じて運動を使い分ける</li>
+          <li>睡眠編・食事編と連動した1日の行動計画に落とし込む</li>
+        </ul>
+      </section>
+
+      <section class="section toc" id="toc">
+        <h2>研修目次</h2>
+        <div class="toc-grid">
+          <div>
+            <h3>第1章 睡眠編</h3>
+            <ol>
+              <li>第8章 集中するために体調を整える</li>
+              <li>体調管理を「仕事の成果設計」として捉える</li>
+              <li>集中の地盤をつくる3要素（睡眠・食事・運動）</li>
+              <li>アスリートの体調管理を知的労働へ翻訳する</li>
+              <li>睡眠が浅い・血糖が乱れる・運動不足で何が起こるか</li>
+              <li>健康と集中に最も重要な「快適な睡眠」を実現する</li>
+              <li>ビジネスの成果を最大化する睡眠設計の考え方</li>
+              <li>睡眠不足が生む「見えないコスト」と長期損失</li>
+              <li>トップアスリートに学ぶ睡眠最優先の姿勢</li>
+              <li>仕事予定より先に睡眠時間を確保する発想転換</li>
+              <li>睡眠とは脳と体を整えるメンテナンス時間</li>
+              <li>ノンレム睡眠とレム睡眠の役割と周期</li>
+              <li>夢の機能（記憶整理・感情処理・危険シミュレーション）</li>
+              <li>睡眠中の脳内クリアランス機能と脳健康</li>
+            </ol>
+          </div>
+          <div>
+            <h3>第1章後半〜第2章 食事編</h3>
+            <ol start="15">
+              <li>睡眠不足の悪影響を生産性の視点で理解する</li>
+              <li>推奨睡眠時間の基準を年齢別に確認する</li>
+              <li>睡眠の量と質を分けて最適化する</li>
+              <li>最適な睡眠時間を計測する方法</li>
+              <li>起床時刻を固定して標準睡眠時間を決める</li>
+              <li>ディープワーク結果で睡眠適正を評価する</li>
+              <li>睡眠ログ（眠気・気分・集中度）を蓄積する</li>
+              <li>週末の寝だめがリズムに与える影響を理解する</li>
+              <li>慢性的睡眠不足のサインを見逃さない</li>
+              <li>就寝1-2時間前の「減速レーン」をつくる</li>
+              <li>光刺激を弱めメラトニン分泌を妨げない</li>
+              <li>カフェイン・アルコールの時間管理を行う</li>
+              <li>毎晩同じ入眠ルーティンを設計する</li>
+              <li>入浴の温度・時間で寝つきを改善する</li>
+            </ol>
+          </div>
+          <div>
+            <h3>第2章後半〜第3章 運動編</h3>
+            <ol start="29">
+              <li>短時間で入眠しやすくなる実践法</li>
+              <li>米軍式リラクゼーション法の要点</li>
+              <li>食事が集中力に与える影響を理解する</li>
+              <li>血糖値スパイクと乱高下のメカニズム</li>
+              <li>血糖値の乱高下がもたらす4つの悪影響</li>
+              <li>食後の眠気・だるさを抑える食事設計</li>
+              <li>食事で血糖値をコントロールする6つの工夫</li>
+              <li>たんぱく質・脂質・食物繊維の組み合わせ</li>
+              <li>ベジファーストと食べる順番の実践</li>
+              <li>低GI食品の選択と集中前の糖質調整</li>
+              <li>間食・分割食・食後10-15分活動の活用</li>
+              <li>まとめと行動計画（睡眠・食事・運動の定着）</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="section schedule">
+        <h2>研修プログラム例（120分）</h2>
+        <ol>
+          <li><span>00:00-00:15</span> 導入: 集中力低下の原因可視化</li>
+          <li><span>00:15-00:50</span> 第1章 睡眠編</li>
+          <li><span>00:50-01:25</span> 第2章 食事編</li>
+          <li><span>01:25-01:55</span> 第3章 運動編</li>
+          <li><span>01:55-02:00</span> 個人アクションプラン提出</li>
+        </ol>
+      </section>
+      <section class="section book-promo" id="book">
+        <h2>書籍のご紹介</h2>
+        <div class="book-grid">
+          <div class="book-cover">
+            <img
+              src="https://img.ips.co.jp/ij/24/1124101061/1124101061-520x.jpg"
+              alt="アウトルックの強化書 1日1時間の時短はこう実現する（できるビジネス）書影"
+            />
+          </div>
+          <div class="book-body">
+            <p class="book-label">講師関連書籍</p>
+            <p class="book-rank">ランキング1位獲得</p>
+            <h3>アウトルックの強化書<br />1日1時間の時短はこう実現する（できるビジネス）</h3>
+            <p>
+              受講者数1万人超のOutlook研修で培った、現場で使える時短ノウハウを体系化。<br />
+              新しいOutlookに対応し、メール処理・誤送信防止・自動化まで実務視点で解説しています。
+            </p>
+            <p class="book-rank-note">本書はAmazonランキングで1位を獲得。多くのビジネスパーソンに選ばれている実務書です。</p>
+            <ul>
+              <li>著者: 伊賀上真左彦 / 岡林昭憲 / 田嶋江梨子</li>
+              <li>出版社: インプレス</li>
+              <li>発売日: 2025年3月5日</li>
+              <li>ISBN: 978-4-295-02023-3</li>
+            </ul>
+            <a class="button primary" href="https://www.amazon.co.jp/dp/4295020230" target="_blank" rel="noreferrer">Amazonで見る</a>
+          </div>
+        </div>
+      </section>
+
+        <h2>運営会社・講師</h2>
+        <div class="company-grid">
+          <div>
+            <p><strong>商号:</strong> 株式会社G.A.Consulting</p>
+            <p><strong>設立:</strong> 2021年4月21日</p>
+            <p><strong>所在地:</strong> 東京都渋谷区代々木3-31-12</p>
+            <p><strong>連絡先:</strong> masa@vbarpa.com</p>
+          </div>
+          <div>
+            <p><strong>講師:</strong> 伊賀上真左彦</p>
+            <p>
+              BPR（業務革新）/RPA（業務自動化）コンサルタント。書籍執筆と企業研修を中心に、業務効率化と再現可能な現場実装を支援。
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <small>© 2026 Your Name</small>
+    <footer class="footer" id="apply">
+      <h2>研修導入のご相談</h2>
+      <p>
+        実施形式（対面/オンライン）、対象職種、時間に合わせてカスタマイズできます。<br />
+        まずは目的と課題感をお知らせください。
+      </p>
+      <a class="button primary" href="mailto:masa@vbarpa.com">メールで問い合わせる</a>
+      <small>© 2026 株式会社G.A.コンサルティング</small>
     </footer>
   </body>
 </html>
+
+
+

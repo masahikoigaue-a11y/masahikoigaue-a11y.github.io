@@ -1,0 +1,87 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">集中力を高める体調設計 研修イメージ</title>
+  <desc id="desc">睡眠設計、血糖安定食、軽運動習慣が集中力と仕事成果を高める全体像</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3efe4"/>
+      <stop offset="100%" stop-color="#eaf3ea"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f6ef"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f5f4a"/>
+      <stop offset="100%" stop-color="#1f4e3d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#203328" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4c7a62"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+  <rect x="40" y="30" width="1520" height="840" rx="28" fill="none" stroke="#d2d8cb"/>
+
+  <text x="800" y="120" text-anchor="middle" fill="#1f5a47" font-size="64" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">
+    集中力を高める体調設計
+  </text>
+  <text x="800" y="168" text-anchor="middle" fill="#5a6c61" font-size="28" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">
+    第8章｜睡眠・食事・運動を設計し、ディープワークの土台をつくる
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="610" y="310" width="380" height="260" rx="28" fill="url(#coreGrad)"/>
+  </g>
+  <text x="800" y="400" text-anchor="middle" fill="#e9f5ef" font-size="34" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">集中力の中枢</text>
+  <text x="800" y="452" text-anchor="middle" fill="#ffffff" font-size="52" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">仕事の成果</text>
+  <text x="800" y="500" text-anchor="middle" fill="#d6e8df" font-size="24" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">判断精度・思考速度・持続力</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="280" width="350" height="250" rx="22" fill="url(#cardGrad)" stroke="#d8d2c4"/>
+    <rect x="120" y="560" width="350" height="250" rx="22" fill="url(#cardGrad)" stroke="#d8d2c4"/>
+    <rect x="1130" y="420" width="350" height="250" rx="22" fill="url(#cardGrad)" stroke="#d8d2c4"/>
+  </g>
+
+  <g transform="translate(150 315)">
+    <circle cx="48" cy="44" r="28" fill="#e8f0ea"/>
+    <path d="M43 22c-10 4-15 15-11 25 4 10 15 15 25 11 5-2 9-6 11-11-8 3-16-1-19-9-2-6-1-12 3-16-3-1-6-1-9 0z" fill="#2f5f4a"/>
+    <text x="95" y="54" fill="#2b3b33" font-size="34" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">睡眠設計</text>
+    <text x="0" y="106" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・最適睡眠時間の計測と固定</text>
+    <text x="0" y="144" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・就寝前1-2時間の減速ルーティン</text>
+    <text x="0" y="182" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・入眠速度と回復感を高める</text>
+  </g>
+
+  <g transform="translate(150 595)">
+    <circle cx="48" cy="44" r="28" fill="#fff0e3"/>
+    <circle cx="48" cy="44" r="14" fill="#c76f28"/>
+    <path d="M25 44h46" stroke="#c76f28" stroke-width="3"/>
+    <text x="95" y="54" fill="#2b3b33" font-size="34" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">血糖安定食</text>
+    <text x="0" y="106" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・ベジファーストと食べる順番</text>
+    <text x="0" y="144" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・低GI＋高たんぱくの組み合わせ</text>
+    <text x="0" y="182" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・食後行動で眠気とだるさを抑える</text>
+  </g>
+
+  <g transform="translate(1160 455)">
+    <circle cx="48" cy="44" r="28" fill="#e7efff"/>
+    <path d="M42 30l15-4m-6 20l14-8m-31 14l16-3" stroke="#3f5ea6" stroke-width="4" stroke-linecap="round"/>
+    <text x="95" y="54" fill="#2b3b33" font-size="34" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">軽運動習慣</text>
+    <text x="0" y="106" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・短時間で脳を覚醒させる</text>
+    <text x="0" y="144" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・疲労を残さない運動量を設計</text>
+    <text x="0" y="182" fill="#5a665f" font-size="23" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">・日中の集中持続を下支えする</text>
+  </g>
+
+  <path d="M470 410 C530 430,560 450,610 450" fill="none" stroke="#4c7a62" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M470 670 C560 640,580 575,610 540" fill="none" stroke="#4c7a62" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1130 540 C1080 525,1045 505,990 495" fill="none" stroke="#4c7a62" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="300" y="820" width="1000" height="52" rx="26" fill="#edf3ed" stroke="#d0dbd0"/>
+    <text x="800" y="853" text-anchor="middle" fill="#355e3b" font-size="26" font-weight="700" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif">
+      前夜の睡眠設計 → 当日の食事設計 → 日中の運動調整 → 集中成果の最大化
+    </text>
+  </g>
+</svg>
