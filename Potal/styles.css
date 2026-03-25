@@ -91,11 +91,13 @@ figure {
 }
 
 .brand-copy strong {
-  font-size: 1.05rem;
+  font-size: 1.7rem;
+  line-height: 1.2;
 }
 
 .brand-copy small {
   color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .contact-shortcut {
@@ -473,7 +475,7 @@ figure {
 
 .lecturer-card {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 180px 1fr;
   gap: 24px;
   padding: 22px;
 }
