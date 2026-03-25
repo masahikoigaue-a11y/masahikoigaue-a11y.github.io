@@ -446,6 +446,27 @@ figure {
   font-weight: 700;
 }
 
+.book-rank {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  background: linear-gradient(180deg, #f1b63f, #d8961f);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.book-highlight {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #eef7fd;
+  border-left: 4px solid var(--sky);
+}
+
+.book-actions {
+  margin-top: 16px;
+}
+
 .meta-list {
   margin-top: 14px;
 }
