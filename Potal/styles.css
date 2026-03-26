@@ -331,6 +331,42 @@ figure {
   padding-left: 18px;
 }
 
+.fixed-visual-band {
+  min-height: 320px;
+  background:
+    linear-gradient(rgba(11, 30, 46, 0.34), rgba(11, 30, 46, 0.56)),
+    url("ChatGPT Image 2026年3月26日 00_55_48.png") center center / cover no-repeat fixed;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fixed-visual-overlay {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.fixed-visual-copy {
+  color: #fff;
+}
+
+.fixed-visual-copy p {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  background: rgba(105, 174, 218, 0.82);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.fixed-visual-copy h2 {
+  max-width: 760px;
+  font-family: "Zen Old Mincho", serif;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.25;
+}
+
 .content-section {
   padding: 38px 0;
   background: #fff;
@@ -597,6 +633,11 @@ figure {
     pointer-events: auto;
     transform: none;
   }
+
+  .fixed-visual-band,
+  .fixed-visual-overlay {
+    min-height: 240px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -624,5 +665,9 @@ figure {
 
   .nav-inner {
     gap: 12px;
+  }
+
+  .fixed-visual-band {
+    background-attachment: scroll;
   }
 }
