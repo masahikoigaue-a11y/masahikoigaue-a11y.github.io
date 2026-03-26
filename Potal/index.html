@@ -417,12 +417,15 @@
           var rect = heroSection.getBoundingClientRect();
           var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
           var progress = Math.min(Math.max(-rect.top / (rect.height + viewportHeight * 0.2), 0), 1);
-          var translateY = progress * 80;
-          var scale = 1.08 - progress * 0.08;
-          var opacity = 1 - progress * 0.85;
+          var translateY = progress * 140;
+          var scale = 1.1 - progress * 0.12;
+          var opacity = 1 - progress * 0.97;
+          var blur = progress * 2.4;
+          var saturate = 1.02 + progress * 0.12;
 
           heroImage.style.transform = "translate3d(0," + translateY + "px,0) scale(" + scale + ")";
           heroImage.style.opacity = String(opacity);
+          heroImage.style.filter = "blur(" + blur + "px) saturate(" + saturate + ")";
         }
 
         updateHeroScrollEffect();

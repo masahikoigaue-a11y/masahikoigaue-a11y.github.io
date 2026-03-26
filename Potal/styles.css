@@ -204,7 +204,8 @@ figure {
   transform: translate3d(0, 0, 0) scale(1.08);
   transform-origin: center center;
   opacity: 1;
-  transition: transform 0.12s linear, opacity 0.18s linear;
+  filter: saturate(1.02) contrast(1.02);
+  transition: transform 0.12s linear, opacity 0.18s linear, filter 0.18s linear;
   will-change: transform, opacity;
 }
 
@@ -553,6 +554,7 @@ figure {
   display: grid;
   gap: 12px;
   align-content: start;
+  padding-top: 52px;
 }
 
 .footer-actions .button.secondary {
