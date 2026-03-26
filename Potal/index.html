@@ -401,11 +401,34 @@
         </div>
         <div class="footer-actions">
           <a class="button primary" href="mailto:masa@vbarpa.com">メールで問い合わせる</a>
-          <a class="button secondary" href="https://www.vbarpa.com/" target="_blank" rel="noreferrer">
-            既存サイトを見る
-          </a>
         </div>
       </div>
     </footer>
+    <script>
+      (function () {
+        var heroImage = document.querySelector(".hero-visual-wide img");
+        var heroSection = document.querySelector(".hero");
+
+        if (!heroImage || !heroSection) {
+          return;
+        }
+
+        function updateHeroScrollEffect() {
+          var rect = heroSection.getBoundingClientRect();
+          var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+          var progress = Math.min(Math.max(-rect.top / (rect.height + viewportHeight * 0.2), 0), 1);
+          var translateY = progress * 80;
+          var scale = 1.08 - progress * 0.08;
+          var opacity = 1 - progress * 0.85;
+
+          heroImage.style.transform = "translate3d(0," + translateY + "px,0) scale(" + scale + ")";
+          heroImage.style.opacity = String(opacity);
+        }
+
+        updateHeroScrollEffect();
+        window.addEventListener("scroll", updateHeroScrollEffect, { passive: true });
+        window.addEventListener("resize", updateHeroScrollEffect);
+      })();
+    </script>
   </body>
 </html>
