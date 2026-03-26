@@ -332,7 +332,7 @@ figure {
   min-height: 320px;
   background:
     linear-gradient(rgba(11, 30, 46, 0.34), rgba(11, 30, 46, 0.56)),
-    url("iImage.png") center center / cover no-repeat fixed;
+    url("fixed-bg-v2.png") center center / cover no-repeat fixed;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
