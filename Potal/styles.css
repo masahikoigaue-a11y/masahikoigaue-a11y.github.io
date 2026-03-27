@@ -26,6 +26,7 @@ body {
   color: var(--ink);
   background: var(--bg);
   line-height: 1.8;
+  padding-top: 148px;
 }
 
 img {
@@ -55,8 +56,10 @@ figure {
   background: #fff;
   border-top: 5px solid var(--sky);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 
@@ -80,17 +83,6 @@ figure {
   width: 180px;
   max-width: 32vw;
   height: auto;
-}
-
-.brand-mark {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--sky), var(--sky-deep));
-  color: #fff;
-  font-weight: 900;
 }
 
 .brand-copy {
@@ -224,7 +216,7 @@ figure {
 .hero-copy h1 {
   margin: 10px 0 14px;
   font-family: "Zen Old Mincho", serif;
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(1.8rem, 4.2vw, 2.95rem);
   color: #214866;
 }
 
@@ -298,6 +290,18 @@ figure {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px dashed #cfe0eb;
+}
+
+.purpose-section {
+  padding: 42px 0 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+}
+
+.purpose-lead {
+  max-width: 920px;
+  font-size: 1.12rem;
+  line-height: 1.9;
+  color: var(--blue-deep);
 }
 
 .notice-section {
@@ -645,6 +649,10 @@ figure {
 }
 
 @media (max-width: 640px) {
+  body {
+    padding-top: 136px;
+  }
+
   .wrap {
     width: min(1360px, calc(100% - 16px));
   }
