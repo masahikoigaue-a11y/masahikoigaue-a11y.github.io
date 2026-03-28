@@ -624,8 +624,10 @@ figure {
   }
 
   .header-top {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .hero-inner {
@@ -633,13 +635,7 @@ figure {
   }
 
   .nav-dropdown-panel {
-    position: static;
-    min-width: 0;
-    margin-top: 8px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: none;
+    min-width: 280px;
   }
 
   .fixed-visual-band,
@@ -650,11 +646,15 @@ figure {
 
 @media (max-width: 640px) {
   body {
-    padding-top: 136px;
+    padding-top: 122px;
   }
 
   .wrap {
     width: min(1360px, calc(100% - 16px));
+  }
+
+  .header-top {
+    padding: 10px 0;
   }
 
   .content-section,
@@ -676,12 +676,60 @@ figure {
   }
 
   .nav-inner {
+    flex-wrap: nowrap;
     gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-inner::-webkit-scrollbar {
+    display: none;
   }
 
   .brand-logo {
-    width: 130px;
-    max-width: 44vw;
+    width: 96px;
+    max-width: 28vw;
+  }
+
+  .brand-copy strong {
+    font-size: 1rem;
+  }
+
+  .brand-copy small {
+    font-size: 0.78rem;
+  }
+
+  .contact-shortcut {
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .nav-dropdown-panel {
+    position: fixed;
+    top: 112px;
+    left: 12px;
+    right: 12px;
+    min-width: 0;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(4px);
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+  }
+
+  .nav-dropdown-panel.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .fixed-visual-band {

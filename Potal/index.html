@@ -392,6 +392,35 @@
       </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var button = document.getElementById("training-menu-toggle");
+      var panel = document.getElementById("training-menu-panel");
+
+      if (!button || !panel) {
+        return;
+      }
+
+      button.addEventListener("click", function (event) {
+        if (window.innerWidth > 900) {
+          return;
+        }
+
+        event.preventDefault();
+        panel.classList.toggle("is-open");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (window.innerWidth > 900) {
+          return;
+        }
+
+        if (!button.contains(event.target) && !panel.contains(event.target)) {
+          panel.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
