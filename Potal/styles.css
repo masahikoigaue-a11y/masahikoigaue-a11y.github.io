@@ -688,6 +688,10 @@ figure {
     display: none;
   }
 
+  .mobile-hide-nav {
+    display: none;
+  }
+
   .brand-logo {
     width: 96px;
     max-width: 28vw;
