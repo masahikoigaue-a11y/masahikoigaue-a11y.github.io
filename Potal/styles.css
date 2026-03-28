@@ -608,6 +608,10 @@ figure {
 }
 
 @media (max-width: 900px) {
+  .mobile-hide-nav {
+    display: none;
+  }
+
   .hero-inner,
   .notice-grid,
   .two-col,
@@ -685,10 +689,6 @@ figure {
   }
 
   .nav-inner::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mobile-hide-nav {
     display: none;
   }
 
