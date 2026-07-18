@@ -162,6 +162,11 @@ figure {
   transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
 }
 
+.nav-dropdown-panel-right {
+  left: auto;
+  right: 0;
+}
+
 .nav-dropdown:hover .nav-dropdown-panel,
 .nav-dropdown:focus-within .nav-dropdown-panel {
   opacity: 1;
@@ -607,6 +612,16 @@ figure {
   border-color: rgba(255, 255, 255, 0.24);
 }
 
+.footer-meta {
+  padding: 0 0 22px;
+}
+
+.footer-meta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.84rem;
+}
+
 @media (max-width: 900px) {
   .mobile-hide-nav {
     display: none;
@@ -740,3 +755,4 @@ figure {
     background-attachment: scroll;
   }
 }
+

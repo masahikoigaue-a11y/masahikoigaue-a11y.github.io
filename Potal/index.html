@@ -58,9 +58,23 @@
           </div>
         </div>
         <a href="#profile">会社概要</a>
-        <a href="https://www.vbarpa.com/blog/categories/team%E5%89%AF%E6%A5%AD" target="_blank" rel="noreferrer">
-          ブログ
-        </a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" id="blog-menu-toggle" aria-haspopup="true"
+            aria-controls="blog-menu-panel">
+            ブログ
+          </button>
+          <div class="nav-dropdown-panel nav-dropdown-panel-right" id="blog-menu-panel">
+            <a href="https://www.vbarpa.com/blog/categories/team%E5%89%AF%E6%A5%AD" target="_blank" rel="noreferrer">
+              業務効率化ブログ
+            </a>
+            <a href="https://www.vbarpa.com/focusfirst" target="_blank" rel="noreferrer">
+              集中力ブログ
+            </a>
+            <a href="https://www.vbarpa.com/outlookbrog" target="_blank" rel="noreferrer">
+              Outlookブログ
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -398,23 +412,44 @@
         <a class="button primary" href="mailto:masa@vbarpa.com">メールで問い合わせる</a>
       </div>
     </div>
+    <div class="wrap footer-meta">
+      <p>更新日: 2026年7月18日</p>
+    </div>
   </footer>
   <script>
     (function () {
-      var button = document.getElementById("training-menu-toggle");
-      var panel = document.getElementById("training-menu-panel");
+      var toggles = document.querySelectorAll(".nav-dropdown-toggle");
 
-      if (!button || !panel) {
+      if (!toggles.length) {
         return;
       }
 
-      button.addEventListener("click", function (event) {
-        if (window.innerWidth > 900) {
+      toggles.forEach(function (button) {
+        var panelId = button.getAttribute("aria-controls");
+        var panel = panelId ? document.getElementById(panelId) : null;
+
+        if (!panel) {
           return;
         }
 
-        event.preventDefault();
-        panel.classList.toggle("is-open");
+        button.addEventListener("click", function (event) {
+          if (window.innerWidth > 900) {
+            return;
+          }
+
+          event.preventDefault();
+
+          toggles.forEach(function (otherButton) {
+            var otherPanelId = otherButton.getAttribute("aria-controls");
+            var otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+
+            if (otherPanel && otherPanel !== panel) {
+              otherPanel.classList.remove("is-open");
+            }
+          });
+
+          panel.classList.toggle("is-open");
+        });
       });
 
       document.addEventListener("click", function (event) {
@@ -422,12 +457,18 @@
           return;
         }
 
-        if (!button.contains(event.target) && !panel.contains(event.target)) {
-          panel.classList.remove("is-open");
-        }
+        toggles.forEach(function (button) {
+          var panelId = button.getAttribute("aria-controls");
+          var panel = panelId ? document.getElementById(panelId) : null;
+
+          if (panel && !button.contains(event.target) && !panel.contains(event.target)) {
+            panel.classList.remove("is-open");
+          }
+        });
       });
     })();
   </script>
 </body>
 
 </html>
+
