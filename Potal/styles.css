@@ -476,9 +476,38 @@ figure {
   grid-template-columns: 1.2fr 1fr;
 }
 
+.book-disclosure {
+  margin: -2px 0 18px;
+  padding: 12px 14px;
+  background: #f7fbfe;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .book-card.featured {
   background: linear-gradient(180deg, #fafdff, #fff);
   border-left: 6px solid var(--sky);
+}
+
+.upcoming-book-card {
+  margin-bottom: 24px;
+  border-left: 8px solid #f1b63f;
+  background: linear-gradient(135deg, #fffdf5 0%, #ffffff 42%, #eef7fd 100%);
+  box-shadow: 0 22px 46px rgba(36, 55, 70, 0.14);
+}
+
+.upcoming-book-cover img {
+  border-width: 2px;
+}
+
+.upcoming-book-rank {
+  background: linear-gradient(180deg, #ff9f1c, #e06c00);
+}
+
+.upcoming-book-highlight {
+  background: #fff7dc;
+  border-left-color: #f1b63f;
 }
 
 .book-cover-card {
@@ -755,4 +784,6 @@ figure {
     background-attachment: scroll;
   }
 }
+
+
 
