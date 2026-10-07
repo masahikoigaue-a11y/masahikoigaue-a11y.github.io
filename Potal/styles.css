@@ -126,6 +126,44 @@ figure {
   font-size: 0.94rem;
 }
 
+.x-account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue-deep);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.x-account-link:hover {
+  color: var(--sky-deep);
+}
+
+.x-mark {
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #111;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.follower-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #f5b21b, #e77918);
+  box-shadow: 0 4px 10px rgba(231, 121, 24, 0.24);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
 .nav-dropdown {
   position: relative;
 }
